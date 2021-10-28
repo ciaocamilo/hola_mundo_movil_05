@@ -1,0 +1,83 @@
+CREACIÓN DEL repositorio
+
+echo "# prueba66" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/ciaocamilo/prueba66.git // Cambiar el repositorio
+git push -u origin master
+
+
+AGREGAR Y SUBIR CAMBIOS
+
+git status
+git add .
+git commit -m "Mensaje"
+git push
+git push origin master -> Con rama
+
+
+CONFIGURACIÓN DE CUENTA
+git config --global user.email "nombre@micorreo.com"
+git config --global user.name "Mi nombre"
+
+REVISAR DIFERENCIAS
+git diff src/App.java
+
+CLONAR
+git clone https://github.com/ciaocamilo/proyectos_grupo_66.git
+
+BAJAR CAMBIOS
+git pull
+
+ - MANEJO DE RAMAS -
+
+CREAR RAMA
+git branch desarrollo
+
+VER RAMA ACTUAL
+git branch
+
+CAMBIAR DE RAMA
+git checkout desarrollo
+
+ACTUALIZAR RAMAS
+git fetch
+
+SUBIR CAMBIOS A RAMA
+git push origin desarrollo
+
+UNIR RAMAS
+git merge
+
+MANEJO DE STASH
+git stash
+git stash list
+git stash apply stash@{0}
+
+DESCARTAR CAMBIOS
+git checkout -- hola.txt
+
+HISTORIAL DE CAMBIOS
+git log
+git superlog
+
+----------------Para SuperLog------------------------------------------------------------------------------------------------------------------
+git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+MERGE ENTRE RAMAS
+------------------
+git checkout RAMA
+git checkout RAMA_QUE_RECIBE
+git merge RAMA_QUE_TRAE
+
+git fetch
+git checkout desarrollo
+git pull
+git checkout --Francy.html
+
+git checkout profeCamilo
+git merge desarrollo
+git push origin profeCamilo
