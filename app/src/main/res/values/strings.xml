@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hola Mundo 05</string>
+    <string name="login_title">Mi App Android</string>
+    <string name="name_hint">Escriba su nombre</string>
+    <string name="hint_password">Escriba su contraseña</string>
+    <string name="enter">Ingresar</string>
 </resources>
