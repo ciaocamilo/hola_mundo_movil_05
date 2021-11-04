@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hola Mundo 05</string>
+    <string name="login_title">My Android App</string>
+    <string name="name_hint">Write your name</string>
+    <string name="hint_password">Write your password</string>
+    <string name="enter">Enter</string>
+</resources>

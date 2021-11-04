@@ -50,24 +50,27 @@
       android:inputType="textPersonName"
       android:text=""
       android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.407"
+      app:layout_constraintHorizontal_bias="0.406"
       app:layout_constraintStart_toEndOf="@+id/ivLoginPicture"
-      app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin" />
+      app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin"
+      app:layout_constraintVertical_bias="0.0" />
 
   <EditText
       android:id="@+id/etPassword"
       android:layout_width="350dp"
-      android:layout_height="0dp"
-      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
       android:ems="10"
       android:hint="@string/hint_password"
       android:inputType="textPassword"
       android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.49"
+      app:layout_constraintHorizontal_bias="0.436"
       app:layout_constraintStart_toEndOf="@+id/ivLoginPicture"
-      app:layout_constraintTop_toBottomOf="@+id/etPersonName" />
+      app:layout_constraintTop_toBottomOf="@+id/etPersonName"
+      app:layout_constraintVertical_bias="0.069" />
 
   <Button
       android:id="@+id/btnLogin"
@@ -79,8 +82,9 @@
       android:textSize="20sp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.49"
       app:layout_constraintStart_toEndOf="@+id/ivLoginPicture"
       app:layout_constraintTop_toBottomOf="@+id/etPassword"
-      app:layout_constraintVertical_bias="0.021" />
+      app:layout_constraintVertical_bias="0.045" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
