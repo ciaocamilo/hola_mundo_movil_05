@@ -11,4 +11,7 @@
     <string name="third_number">Ingrese el tercer número</string>
     <string name="calculate">Calcular</string>
     <string name="zero_avg">Promedio = 0</string>
+    <string name="avg_equals">Promedio = %1$s</string>
+    <string name="warning_all_numbers">Debes ingresar todos los números</string>
+    <string name="name">Nombre</string>
 </resources>
