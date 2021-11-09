@@ -5,4 +5,10 @@
     <string name="hint_password">Escriba su contraseña</string>
     <string name="enter">Ingresar</string>
     <string name="exit">Salir</string>
+    <string name="calculate_avg">Calcular promedio</string>
+    <string name="first_number">Ingrese el primer número</string>
+    <string name="second_number">Ingrese el segundo número</string>
+    <string name="third_number">Ingrese el tercer número</string>
+    <string name="calculate">Calcular</string>
+    <string name="zero_avg">Promedio = 0</string>
 </resources>

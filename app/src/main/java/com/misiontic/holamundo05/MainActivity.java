@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentLogin);
     }
 
+    public void goToCalculator(View view) {
+        Intent intentCalculator = new Intent(this, CalculatorActivity.class);
+        startActivity(intentCalculator);
+    }
+
 }
