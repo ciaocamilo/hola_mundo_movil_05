@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentCalculator);
     }
 
+    public void goToPersonForm(View view) {
+        Intent intentPersonForm = new Intent(this, PersonFormActivity.class);
+        startActivity(intentPersonForm);
+    }
+
 }

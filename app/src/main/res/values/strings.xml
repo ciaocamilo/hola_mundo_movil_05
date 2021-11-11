@@ -13,5 +13,18 @@
     <string name="zero_avg">Promedio = 0</string>
     <string name="avg_equals">Promedio = %1$s</string>
     <string name="warning_all_numbers">Debes ingresar todos los números</string>
-    <string name="name">Nombre</string>
+    <string name="name">Nombres</string>
+    <string name="test_form">FORMULARIO DE PRUEBA</string>
+    <string name="person_data">Datos Personales</string>
+    <string name="lastname">Apellidos</string>
+    <string name="hint_lastname">Escriba sus apellidos</string>
+    <string name="address">Direccción</string>
+    <string name="hint_address">Escriba su dirección</string>
+    <string name="phone">Teléfono</string>
+    <string name="hint_phone">Escriba su teléfono</string>
+    <string name="birthday">Fecha nacimiento</string>
+    <string name="hint_birthday">Escriba fecha nacimiento</string>
+    <string name="clear">Limpiar</string>
+    <string name="save">Guardar</string>
+    <string name="form">Formulario</string>
 </resources>
