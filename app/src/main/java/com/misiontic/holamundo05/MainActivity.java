@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentContacts);
     }
 
+    public void goToOrder(View view) {
+        Intent intentOrder = new Intent(this, OrderActivity.class);
+        startActivity(intentOrder);
+    }
+
 }

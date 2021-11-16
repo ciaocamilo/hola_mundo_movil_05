@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo05">
         <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ContactActivity"
             android:exported="false" />
         <activity

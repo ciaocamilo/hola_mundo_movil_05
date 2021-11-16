@@ -30,4 +30,6 @@
     <string name="contacts">Contactos</string>
     <string name="contact_example">Pepito Perez</string>
     <string name="phone_example">31526489652</string>
+    <string name="do_order">Realizar Pedido</string>
+    <string name="order">Pedido</string>
 </resources>
