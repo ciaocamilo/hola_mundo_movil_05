@@ -27,4 +27,7 @@
     <string name="clear">Limpiar</string>
     <string name="save">Guardar</string>
     <string name="form">Formulario</string>
+    <string name="contacts">Contactos</string>
+    <string name="contact_example">Pepito Perez</string>
+    <string name="phone_example">31526489652</string>
 </resources>
