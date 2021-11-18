@@ -32,4 +32,11 @@
     <string name="phone_example">31526489652</string>
     <string name="do_order">Realizar Pedido</string>
     <string name="order">Pedido</string>
+    <string name="chicken">Pollo</string>
+    <string name="salami">Salami</string>
+    <string name="ham">Jamón</string>
+    <string name="strOrderBase">Pedido realizado con los siguientes ingredientes: </string>
+    <string name="special_pizza">Pizza especial</string>
+    <string name="home_pizza">Deliciosa pizza de la casa</string>
+    <string name="pizza_description">Pizza de carnes especialmente preparada por el restaurante a partir de los ingredientes seleccionados.</string>
 </resources>

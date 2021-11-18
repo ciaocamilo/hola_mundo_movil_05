@@ -26,9 +26,23 @@ public class OrderActivity extends AppCompatActivity {
 
     public void realizarPedido() {
         CheckBox cbPollo = findViewById(R.id.cbPollo);
+        CheckBox cbSalami = findViewById(R.id.cbSalami);
+        CheckBox cbJamon = findViewById(R.id.cbJamon);
+
+        String strPedido = getString(R.string.strOrderBase);
+        // Pedido realizado con los siguientes ingredientes:
+
         if (cbPollo.isChecked()) {
-            Toast.makeText(this, "Pedido realizado con Pollo", Toast.LENGTH_LONG).show();
+            strPedido = strPedido.concat(" pollo ");
         }
+        if (cbSalami.isChecked()) {
+            strPedido = strPedido.concat("salami ");
+        }
+        if (cbJamon.isChecked()) {
+            strPedido = strPedido.concat("jamón ");
+        }
+
+        Toast.makeText(this, strPedido, Toast.LENGTH_LONG).show();
     }
 
 }
