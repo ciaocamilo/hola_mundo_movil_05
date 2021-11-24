@@ -17,9 +17,8 @@ public class PersonFormActivity extends AppCompatActivity {
 
     public void guardarFormulario(View view) {
         MySQLiteHelper conexion_bd = new MySQLiteHelper(this);
-        // Error en el Query
         /*String insert_query = "INSERT INTO personas (nombres, apellidos, direccion, telefono, fecha_nacimiento) " +
-                "VALUES ('Juan', 'Castro', 'Avenida Y', '31517454', '05/08/2005')";
+                "VALUES ('"+name+"', '"+lastname+"', '"+address+"', '"+phone+"', '"+birthday+"')";
         conexion_bd.insertData(insert_query);*/
     }
 
