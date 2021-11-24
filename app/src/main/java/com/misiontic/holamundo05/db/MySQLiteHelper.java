@@ -1,6 +1,7 @@
 package com.misiontic.holamundo05.db;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -39,6 +40,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             success = false;
         }
         return success;
+    }
+
+    public Cursor getData(String sentence, String[] params) {
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cu = db.rawQuery(sentence, params);
+        return cu;
     }
 
 }
