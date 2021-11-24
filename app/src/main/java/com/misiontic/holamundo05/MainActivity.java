@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToContacts() {
         // Intent intentContacts = new Intent(this, ContactActivity.class);
-        Intent intentContacts = new Intent(this, Contact2Activity.class);
+        // Intent intentContacts = new Intent(this, Contact2Activity.class);
+        Intent intentContacts = new Intent(this, ContactListActivity.class);
         startActivity(intentContacts);
     }
 

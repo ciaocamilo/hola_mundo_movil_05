@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo05">
         <activity
+            android:name=".ContactListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Contact2Activity"
             android:exported="false" />
         <activity
