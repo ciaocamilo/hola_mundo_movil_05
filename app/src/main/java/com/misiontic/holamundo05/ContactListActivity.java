@@ -2,8 +2,11 @@ package com.misiontic.holamundo05;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -66,14 +69,29 @@ public class ContactListActivity extends AppCompatActivity {
             adapter = new ContactListViewAdapter(this, contactList);
             listView.setAdapter(adapter);
 
+            // Funcionalidad al click
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                    Persona seleccionado = (Persona) listView.getItemAtPosition(position);
+                    int idPerson = seleccionado.getId();
+                    goToContactUpdate(idPerson);
+                }
+            });
+            //
+
         } catch (Exception e) {
             Toast.makeText(this, "Error al realizar la consulta", Toast.LENGTH_SHORT).show();
         } finally {
             resultados.close();
         }
 
+    }
 
-
+    public void goToContactUpdate (int idPerson) {
+        Intent intentUpdate = new Intent(this, ContactUpdateActivity.class);
+        intentUpdate.putExtra("person", idPerson);
+        startActivity(intentUpdate);
     }
 
 }
