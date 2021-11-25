@@ -1,8 +1,10 @@
 package com.misiontic.holamundo05;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -72,6 +74,34 @@ public class ContactUpdateActivity extends AppCompatActivity {
         }
     }
 
+    public void eliminarContacto(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("¿Está seguro?");
+        builder.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String tabla = "personas";
+                String whereClause = "_id = ?";
+                String[] params = new String[]{String.valueOf(personId)};
+                int rows = conexion_bd.deleteData(tabla, whereClause, params);
+
+                if (rows > 0) {
+                    Toast.makeText(ContactUpdateActivity.this, "Contacto eliminado", Toast.LENGTH_SHORT).show();
+                    goToContacts();
+                } else {
+                    Toast.makeText(ContactUpdateActivity.this, "No se pudo eliminar el contacto", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // Do nothing
+            }
+        });
+        builder.create();
+        builder.show();
+    }
 
     public void goToContacts() {
         Intent intentContact = new Intent(this, ContactListActivity.class);
