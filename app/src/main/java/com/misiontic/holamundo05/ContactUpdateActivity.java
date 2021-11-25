@@ -2,8 +2,11 @@ package com.misiontic.holamundo05;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -48,6 +51,31 @@ public class ContactUpdateActivity extends AppCompatActivity {
         etAddress.setText(resultado.getString(3));
         etPhone.setText(resultado.getString(4));
         etBirthday.setText(resultado.getString(5));
+    }
+
+    public void actualizarContacto(View view) {
+        String tabla = "personas";
+        ContentValues cv = new ContentValues();
+        cv.put("nombres", etName.getText().toString());
+        cv.put("apellidos", etLastname.getText().toString());
+        cv.put("direccion", etAddress.getText().toString());
+        cv.put("telefono", etPhone.getText().toString());
+        cv.put("fecha_nacimiento", etBirthday.getText().toString());
+        String whereClause = "_id = ?";
+        String[] params = new String[]{String.valueOf(personId)};
+        int rows = conexion_bd.updateData(tabla, cv, whereClause, params);
+        if (rows > 0) {
+            Toast.makeText(this, "Contacto actualizado", Toast.LENGTH_SHORT).show();
+            goToContacts();
+        } else {
+            Toast.makeText(this, "No se pudo actualizar el contacto", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    public void goToContacts() {
+        Intent intentContact = new Intent(this, ContactListActivity.class);
+        startActivity(intentContact);
     }
 
 }
