@@ -42,4 +42,8 @@
     <string name="update">Actualizar</string>
     <string name="delete">Eliminar</string>
     <string name="update_contact">Actualizar contacto</string>
+    <string name="new_user">Nuevo usuario</string>
+    <string name="cancel">Cancelar</string>
+    <string name="user_name">Nombre usuario</string>
+    <string name="password">Contraseña</string>
 </resources>
