@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741927316025",
+    "project_id": "app-misiontic-05",
+    "storage_bucket": "app-misiontic-05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741927316025:android:c5ef54518637aaace5bbe8",
+        "android_client_info": {
+          "package_name": "com.misiontic.holamundo05"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741927316025-pdt26kf53n4fc5bnv115c4feflr76u9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2oQFzgTF4oj5qdIENDBVhtZ8-1LaGbps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741927316025-pdt26kf53n4fc5bnv115c4feflr76u9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
