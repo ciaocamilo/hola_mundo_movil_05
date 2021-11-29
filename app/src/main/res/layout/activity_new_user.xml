@@ -84,6 +84,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/save"
                 android:layout_marginEnd="10dp"
+                android:onClick="createUser"
                 android:layout_weight="1"/>
             <Button
                 android:id="@+id/btnCancelUser"
