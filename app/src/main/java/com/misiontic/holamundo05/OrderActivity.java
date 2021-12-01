@@ -10,6 +10,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import com.misiontic.holamundo05.api.ApiRequest;
+import com.misiontic.holamundo05.model.Pedido;
+import com.misiontic.holamundo05.model.Producto;
+
+import java.util.ArrayList;
+
 public class OrderActivity extends AppCompatActivity {
 
     private SharedPreferences settings; // SP
@@ -28,6 +34,14 @@ public class OrderActivity extends AppCompatActivity {
                 realizarPedido();
             }
         });
+
+        // Test API
+        ApiRequest api = new ApiRequest();
+        ArrayList<Producto> listaProductos = api.consultarProductos();
+
+        Toast.makeText(this, "Hola", Toast.LENGTH_SHORT).show();
+
+
     }
 
     public void realizarPedido() {
@@ -50,6 +64,13 @@ public class OrderActivity extends AppCompatActivity {
         if (cbJamon.isChecked()) {
             strPedido = strPedido.concat("jamón ");
         }
+
+        // API
+        Pedido nuevoPedido = new Pedido(usuario, strPedido, 1200.0, "0.0");
+        ApiRequest api = new ApiRequest();
+        api.guardarPedido(nuevoPedido);
+        //
+
 
         strPedido = strPedido.concat(" para el señor(a) " + usuario);
 
