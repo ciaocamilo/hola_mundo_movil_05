@@ -37,7 +37,7 @@ public class NewUserActivity extends AppCompatActivity {
     }
 
 
-
+    /* Ejemplo*/
     public void writeTest(View view) {
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -46,6 +46,7 @@ public class NewUserActivity extends AppCompatActivity {
         myRef.setValue("Hello, World!");
     }
 
+    /* Ejemplo*/
     public void readTest() {
         // Read from the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
