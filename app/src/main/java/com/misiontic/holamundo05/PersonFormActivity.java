@@ -127,8 +127,12 @@ public class PersonFormActivity extends AppCompatActivity {
             Bitmap bitmap = ((BitmapDrawable) ivPictureForm.getDrawable()).getBitmap();
 
             FileOutputStream outputStream = null;
-            File file = Environment.getExternalStorageDirectory();
-            File dir = new File(file.getAbsolutePath() + "/Fotos_05");
+
+            /* File file = Environment.getExternalStorageDirectory();
+            File dir = new File(file.getAbsolutePath() + "/Fotos_05"); */
+            // Cambiar ´por
+            File dir = new File(this.getExternalFilesDir(Environment.DIRECTORY_PICTURES), "Fotos_05");
+
             dir.mkdirs();
 
             String filename = String.format("%d.png", System.currentTimeMillis());
