@@ -139,6 +139,8 @@ public class PersonFormActivity extends AppCompatActivity {
             File outfile = new File (dir, filename);
 
             try {
+                // Archivo guardado en
+                // \Android\data\com.misiontic.holamundo05\files\Pictures\Fotos_05
                 outputStream = new FileOutputStream(outfile);
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
             } catch (Exception e) {
